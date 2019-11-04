@@ -6,16 +6,14 @@ namespace SMTRPZ.Lab2
 {
     public class RoomHandler : HabitationHandler
     {
-        public override Habitation PickHabitation(Animal a)
+        protected override bool CanHandle(Animal animal)
         {
-            if(a is Demiguise)
-            {
-                return new Room(a as Demiguise);
-            }
-            else
-            {
-                return TryNext(a);
-            }
+            return animal is Demiguise;
+        }
+
+        protected override Habitation GetResult(Animal animal)
+        {
+            return new Room((Demiguise)animal);
         }
     }
 }

@@ -6,16 +6,14 @@ namespace SMTRPZ.Lab2
 {
     public class DemiguiseEncounterHandler : RandomEncounterHandler
     {
-        public override Animal HandleEncounter(int chance)
+        protected override bool CanHandle(int chance)
         {
-            if (chance > 3 && chance < 8)
-            {
-                return new Demiguise(Guid.NewGuid().ToString(), 50);
-            }
-            else
-            {
-                return TryNext(chance);
-            }
+            return chance > 3 && chance < 8;
+        }
+
+        protected override Animal GetResult(int chance)
+        {
+            return new Demiguise(Guid.NewGuid().ToString(), 50);
         }
     }
 }

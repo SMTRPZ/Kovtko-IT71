@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SMTRPZ.Lab2.Animal">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAAAAAAABAAAAA=</HashCode>
+      <FileName>Animals\Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Bowtruckle">
+    <Position X="1" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Bowtruckle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Demiguise">
+    <Position X="2.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Demiguise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Occamy">
+    <Position X="4.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Occamy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.NoSuitableEncounterHandlerException">
+    <Position X="14.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NoSuitableEncounterHandlerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.NoSuitableHabitationHandlerException">
+    <Position X="14.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NoSuitableHabitationHandlerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.AviaryHandler">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\AviaryHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.HabitationHandler">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\HabitaionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.PastureHandler">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\PastureHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.RoomHandler">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\RoomHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Aviary">
+    <Position X="11.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Habitations\Aviary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Habitation">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABAAAAEAAAAAAAAACQAAIgCCAAAAAgAAAAABA=</HashCode>
+      <FileName>Habitations\Habitation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="animal" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Pasture">
+    <Position X="7.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Habitations\Pasture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Room">
+    <Position X="9.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Habitations\Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.HabitationsGroup" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABAAAAEAAAAAAEAACQAQAAAAAAAIAgAAAAAAA=</HashCode>
+      <FileName>HabitationsComposite\HabitationsGroup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="habitations" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SMTRPZ.Lab2.BowtruckleEncounterHandler">
+    <Position X="13" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\BowtruckleEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.DemiguiseEncounterHandler">
+    <Position X="14.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\DemiguiseEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.OccamyEncounterHandler">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\OccamyEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.RandomEncounterHandler">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\RandomEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.DayTimeHandler">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>VoiceHandlers\DayTimeHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.NightTimeHandler">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>VoiceHandlers\NightTimeHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.VoiceHandler">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <AssociationLine Name="root" Type="SMTRPZ.Lab2.IHabitationUnit">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.608" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAQAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>VoiceHandlers\VoicesHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="root" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Case">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAFAAAAAAGAACQCAAAgAAAAIAkUAAAAIA=</HashCode>
+      <FileName>Case.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="voiceHandler" />
+      <Field Name="storageRoot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Options">
+    <Position X="13" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Options.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.Program">
+    <Position X="14.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SMTRPZ.Lab2.IHabitationUnit">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABAAAAEAAAAAAEAACQAAAAAAAAAIAgAAAAAAA=</HashCode>
+      <FileName>HabitationsComposite\IHabitationUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -106,7 +106,7 @@ namespace XUnitTests
         public void AddContainerAddsContainer()
         {
             int expectedCount = 4;
-            Case.AddContainer(HabitationHandler.CreateHandlers().PickHabitation(new Bowtruckle("Tree", 24)));
+            Case.AddContainer(HandlersCreator.CreateHabitationHandlers().Handle(new Bowtruckle("Tree", 24)));
             Assert.Equal(expectedCount, Case.GetCount());
             Init();
         }
@@ -139,7 +139,7 @@ namespace XUnitTests
         [Fact]
         public void RemoveContainerReturnsFalseForNonExistingContainer()
         {
-            Assert.False(Case.RemoveContainer(HabitationHandler.CreateHandlers().PickHabitation(new Occamy("Fish", 44))));
+            Assert.False(Case.RemoveContainer(HandlersCreator.CreateHabitationHandlers().Handle(new Occamy("Fish", 44))));
         }
 
         [Fact]

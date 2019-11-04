@@ -6,16 +6,14 @@ namespace SMTRPZ.Lab2
 {
     public class BowtruckleEncounterHandler : RandomEncounterHandler
     {
-        public override Animal HandleEncounter(int chance)
+        protected override bool CanHandle(int chance)
         {
-            if(chance < 4)
-            {
-                return new Bowtruckle(Guid.NewGuid().ToString(),5);
-            }
-            else
-            {
-                return TryNext(chance);
-            }
+            return chance < 4;
+        }
+
+        protected override Animal GetResult(int chance)
+        {
+            return new Bowtruckle(Guid.NewGuid().ToString(), 5);
         }
     }
 }

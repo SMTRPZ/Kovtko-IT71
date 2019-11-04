@@ -19,7 +19,7 @@ namespace XUnitTests
         [MemberData(nameof(RandomEncounterHandlersTestData))]
         public void HandlersReturnCorrectAnimalForValidChance(int chance, Type expected)
         {
-            var recievedAnimal = RandomEncounterHandler.CreateHandlers().HandleEncounter(chance);
+            var recievedAnimal = HandlersCreator.CreateRandomEncounterHandlers().Handle(chance);
             Assert.NotNull(recievedAnimal);
             Assert.Equal(expected, recievedAnimal.GetType());
         }
@@ -30,7 +30,7 @@ namespace XUnitTests
             int chance = 9;
             RandomEncounterHandler handler = new BowtruckleEncounterHandler();
             handler.SetNextHandler(new DemiguiseEncounterHandler());
-            Action act = () => handler.HandleEncounter(chance);
+            Action act = () => handler.Handle(chance);
 
             Assert.Throws<NoSuitableEncounterHandlerException>(act);
         }

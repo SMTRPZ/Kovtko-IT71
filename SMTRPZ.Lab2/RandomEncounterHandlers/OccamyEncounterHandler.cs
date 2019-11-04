@@ -6,16 +6,14 @@ namespace SMTRPZ.Lab2
 {
     public class OccamyEncounterHandler : RandomEncounterHandler
     {
-        public override Animal HandleEncounter(int chance)
+        protected override bool CanHandle(int chance)
         {
-            if (chance > 7)
-            {
-                return new Occamy(Guid.NewGuid().ToString(), 12);
-            }
-            else
-            {
-                return TryNext(chance);
-            }
+            return chance > 7;
+        }
+
+        protected override Animal GetResult(int chance)
+        {
+            return new Occamy(Guid.NewGuid().ToString(), 12);
         }
     }
 }

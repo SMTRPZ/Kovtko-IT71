@@ -6,16 +6,14 @@ namespace SMTRPZ.Lab2
 {
     public class PastureHandler : HabitationHandler
     {
-        public override Habitation PickHabitation(Animal a)
+        protected override bool CanHandle(Animal animal)
         {
-            if(a is Bowtruckle)
-            {
-                return new Pasture(a as Bowtruckle);
-            }
-            else
-            {
-                return TryNext(a);
-            }
+            return animal is Bowtruckle;
+        }
+
+        protected override Habitation GetResult(Animal animal)
+        {
+            return new Pasture((Bowtruckle)animal);
         }
     }
 }

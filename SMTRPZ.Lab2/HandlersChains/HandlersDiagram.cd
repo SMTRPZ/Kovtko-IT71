@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SMTRPZ.Lab2.BowtruckleEncounterHandler">
+    <Position X="7" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\BowtruckleEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.DemiguiseEncounterHandler">
+    <Position X="11.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\DemiguiseEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.OccamyEncounterHandler">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\OccamyEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.RandomEncounterHandler">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>RandomEncounterHandlers\RandomEncounterHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.AviaryHandler">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\AviaryHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.HabitationHandler">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\HabitaionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.PastureHandler">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\PastureHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.RoomHandler">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>HabitationHandlers\RoomHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMTRPZ.Lab2.ChainLink&lt;THandler, TParam, TReturn&gt;">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAoAAEAACABgAAA=</HashCode>
+      <FileName>HandlersCreators\ChainLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SMTRPZ.Lab2.HandlersCreator">
+    <Position X="6" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQQEAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>HandlersChains\HandlersCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SMTRPZ.Lab2.IChainLink&lt;THandler&gt;">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>HandlersChains\IChainLink.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

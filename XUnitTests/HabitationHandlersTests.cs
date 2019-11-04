@@ -31,7 +31,7 @@ namespace XUnitTests
         [MemberData(nameof(HabitationHandlersTestData))]
         public void HandlersReturnValidRoomForAnimals(Animal a, Habitation expected)
         {
-            var recieved = HabitationHandler.CreateHandlers().PickHabitation(a);
+            var recieved = HandlersCreator.CreateHabitationHandlers().Handle(a);
             Assert.NotNull(recieved);
             Assert.Equal(expected.GetAnimal(), recieved.GetAnimal());
             Assert.Equal(expected.GetType(), recieved.GetType());
@@ -44,7 +44,7 @@ namespace XUnitTests
             HabitationHandler handler = new PastureHandler();
             handler.SetNextHandler(new AviaryHandler());
 
-            Action act = () => handler.PickHabitation(demiguise);
+            Action act = () => handler.Handle(demiguise);
 
             Assert.Throws<NoSuitableHabitationHandlerException>(act);
         }

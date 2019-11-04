@@ -56,7 +56,7 @@ namespace SMTRPZ.Lab2
 
         public void AddAnimal(Animal a)
         {
-            storageRoot.AddContainer(HabitationHandler.CreateHandlers().PickHabitation(a));
+            storageRoot.AddContainer(HandlersCreator.CreateHabitationHandlers().Handle(a));
         }
 
         public void AddContainer(IHabitationUnit unit)
@@ -67,7 +67,7 @@ namespace SMTRPZ.Lab2
         public void RandomEncounter()
         {
             Random rnd = new Random();
-            AddAnimal(RandomEncounterHandler.CreateHandlers().HandleEncounter(rnd.Next(10)));
+            AddAnimal(HandlersCreator.CreateRandomEncounterHandlers().Handle(rnd.Next(10)));
         }
 
         public Habitation GetAnimalContainer(string animalName)

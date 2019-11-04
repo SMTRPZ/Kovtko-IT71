@@ -6,16 +6,14 @@ namespace SMTRPZ.Lab2
 {
     public class AviaryHandler : HabitationHandler
     {
-        public override Habitation PickHabitation(Animal a)
+        protected override bool CanHandle(Animal animal)
         {
-            if(a is Occamy)
-            {
-                return new Aviary(a as Occamy);
-            }
-            else
-            {
-                return TryNext(a);
-            }
+            return animal is Occamy;
+        }
+
+        protected override Habitation GetResult(Animal animal)
+        {
+            return new Aviary((Occamy)animal);
         }
     }
 }

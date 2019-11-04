@@ -6,6 +6,8 @@ namespace SMTRPZ.Lab2
 {
     public class Case
     {
+        private static readonly HabitationHandlersChain HabitationPicker = HabitationHandlersChain.Instance;
+        private static readonly RndEncHandlersChain RndEncounter = RndEncHandlersChain.Instance;
         private VoiceHandler voiceHandler;
         private IHabitationUnit storageRoot;
         public Case(HabitationsGroup unit)
@@ -54,20 +56,19 @@ namespace SMTRPZ.Lab2
             return storageRoot.GetCount();
         }
 
-        public void AddAnimal(Animal a)
-        {
-            storageRoot.AddContainer(HandlersCreator.CreateHabitationHandlers().Handle(a));
-        }
-
         public void AddContainer(IHabitationUnit unit)
         {
             storageRoot.AddContainer(unit);
         }
 
+        public void AddAnimal(Animal a)
+        {
+            storageRoot.AddContainer(HabitationPicker.PickHabitation(a));
+        }
+
         public void RandomEncounter()
         {
-            Random rnd = new Random();
-            AddAnimal(HandlersCreator.CreateRandomEncounterHandlers().Handle(rnd.Next(10)));
+            AddAnimal(RndEncounter.HandleEncounterRandom10());
         }
 
         public Habitation GetAnimalContainer(string animalName)

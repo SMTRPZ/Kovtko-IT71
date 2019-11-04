@@ -31,7 +31,7 @@ namespace XUnitTests
         [MemberData(nameof(HabitationHandlersTestData))]
         public void HandlersReturnValidRoomForAnimals(Animal a, Habitation expected)
         {
-            var recieved = HandlersCreator.CreateHabitationHandlers().Handle(a);
+            var recieved = HabitationHandlersChain.Instance.PickHabitation(a);
             Assert.NotNull(recieved);
             Assert.Equal(expected.GetAnimal(), recieved.GetAnimal());
             Assert.Equal(expected.GetType(), recieved.GetType());

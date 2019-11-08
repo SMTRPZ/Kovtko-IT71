@@ -180,13 +180,35 @@
   </Class>
   <Class Name="SMTRPZ.Lab2.Case">
     <Position X="9.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="habitationPicker" Type="SMTRPZ.Lab2.HabitationHandlersChain" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="3.947" />
+        <Point X="11.188" Y="3.947" />
+        <Point X="11.188" Y="8.25" />
+        <Point X="15.25" Y="8.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="rndEncounter" Type="SMTRPZ.Lab2.RndEncHandlersChain" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="3.759" />
+        <Point X="11.917" Y="3.759" Type="JumpStart" />
+        <Point X="12.083" Y="3.759" Type="JumpEnd" />
+        <Point X="18.797" Y="3.759" />
+        <Point X="18.797" Y="8" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.086" Y="0.192" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>gAQAAAAAAAAAFAAAAAAGAACQCAAAgAAAAIAkUAAAAIA=</HashCode>
+      <HashCode>AAQAAAAABAAAFAAAAAAGAACQCAAAgAAAAIAkUIAAAIA=</HashCode>
       <FileName>Case.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="voiceHandler" />
       <Field Name="storageRoot" />
+      <Field Name="habitationPicker" />
+      <Field Name="rndEncounter" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SMTRPZ.Lab2.Options">
@@ -207,62 +229,55 @@
     <Position X="11.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAoAAEAACABgAAA=</HashCode>
-      <FileName>HandlersCreators\ChainLink.cs</FileName>
+      <FileName>HandlersChains\ChainLink.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SMTRPZ.Lab2.HabitationHandlersChain">
-    <Position X="15.25" Y="9" Width="1.5" />
+    <Position X="15.25" Y="8" Width="1.5" />
     <AssociationLine Name="Handlers" Type="SMTRPZ.Lab2.HabitationHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="15.25" Y="10.125" />
-        <Point X="0.279" Y="10.125" />
-        <Point X="0.279" Y="2.812" />
+        <Point X="15.812" Y="9.425" />
+        <Point X="15.812" Y="10.121" />
+        <Point X="0.345" Y="10.121" />
+        <Point X="0.345" Y="2.812" />
         <Point X="2.25" Y="2.812" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\HabitationHandlersChain.cs</FileName>
+      <FileName>HandlersChains\HandlersChains\HabitationHandlersChain.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="Handlers" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="SMTRPZ.Lab2.HandlersChain&lt;TSingleton, THandler&gt;">
-    <Position X="16.5" Y="6.25" Width="1.5" />
+  <Class Name="SMTRPZ.Lab2.HandlersChain&lt;THandler&gt;">
+    <Position X="16.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\HandlersChain.cs</FileName>
+      <FileName>HandlersChains\HandlersChains\HandlersChain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SMTRPZ.Lab2.RndEncHandlersChain">
-    <Position X="17.5" Y="9" Width="1.5" />
+    <Position X="17.5" Y="8" Width="1.5" />
     <AssociationLine Name="Handlers" Type="SMTRPZ.Lab2.RandomEncounterHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="18.531" Y="9" />
-        <Point X="18.531" Y="3.653" />
-        <Point X="14.25" Y="3.653" />
-        <Point X="14.25" Y="4.25" />
+        <Point X="18.531" Y="8" />
+        <Point X="18.531" Y="4.438" />
+        <Point X="14.5" Y="4.438" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.79" Y="0.236" />
+        <Position X="0.236" Y="-0.79" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAEAABAAIAAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\RndEncHandlersChain.cs</FileName>
+      <FileName>HandlersChains\HandlersChains\RndEncHandlersChain.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="Handlers" />
     </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="SMTRPZ.Lab2.Singleton&lt;TSingleton&gt;">
-    <Position X="16.5" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\Singleton.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Interface Name="SMTRPZ.Lab2.IHabitationUnit">
     <Position X="6.5" Y="0.75" Width="1.5" />

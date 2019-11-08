@@ -19,7 +19,7 @@ namespace XUnitTests
         [MemberData(nameof(RandomEncounterHandlersTestData))]
         public void HandlersReturnCorrectAnimalForValidChance(int chance, Type expected)
         {
-            var recievedAnimal = RndEncHandlersChain.Instance.HandleEncounter(chance);
+            var recievedAnimal = new RndEncHandlersChain().HandleEncounter(chance);
             Assert.NotNull(recievedAnimal);
             Assert.Equal(expected, recievedAnimal.GetType());
         }

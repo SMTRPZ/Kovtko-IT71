@@ -4,12 +4,11 @@ using System.Reflection;
 
 namespace SMTRPZ.Lab2
 {
-    public abstract class HandlersChain<TSingleton, THandler> : Singleton<TSingleton>
-        where TSingleton : HandlersChain<TSingleton, THandler> where THandler : IChainLink<THandler>
+    public abstract class HandlersChain<THandler> where THandler : IChainLink<THandler>
     {
         protected readonly THandler Handler;
 
-        protected HandlersChain(THandler[] handlers)
+        public HandlersChain(THandler[] handlers)
         {
             Handler = CreateHandlers(handlers);
         }

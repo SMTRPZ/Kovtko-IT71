@@ -67,7 +67,7 @@ namespace XUnitTests
         [MemberData(nameof(HabitationGroupTestData))]
         public void GetAnimalContainerReturnsCorrectAnswerForValidInput(Animal a)
         {
-            Habitation expected = HabitationHandlersChain.Instance.PickHabitation(a);
+            Habitation expected = new HabitationHandlersChain().PickHabitation(a);
             Habitation recieved = group.GetAnimalContainer(a.Name);
             Assert.NotNull(recieved);
             Assert.Equal(expected.GetAnimal(), recieved.GetAnimal());
@@ -85,7 +85,7 @@ namespace XUnitTests
         [Fact]
         public void RemoveContainerReturnsFalseForNonExistingContainer()
         {
-            bool recieved = group.RemoveContainer(HabitationHandlersChain.Instance.PickHabitation(new Occamy("Fish",44)));
+            bool recieved = group.RemoveContainer(new HabitationHandlersChain().PickHabitation(new Occamy("Fish",44)));
             Assert.False(recieved);
         }
 
@@ -110,7 +110,7 @@ namespace XUnitTests
         public void AddContainerAddsContainer()
         {
             int expectedCount = 4;
-            group.AddContainer(HabitationHandlersChain.Instance.PickHabitation(new Bowtruckle("Tree",24)));
+            group.AddContainer(new HabitationHandlersChain().PickHabitation(new Bowtruckle("Tree",24)));
             Assert.Equal(expectedCount, group.GetCount());
             InitGroup();
         }

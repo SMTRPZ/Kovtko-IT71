@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SMTRPZ.Lab2
 {
-    public class RndEncHandlersChain : HandlersChain<RndEncHandlersChain, RandomEncounterHandler>
+    public class RndEncHandlersChain : HandlersChain<RandomEncounterHandler>
     {
         private Random Random { get; }
 
@@ -14,7 +14,7 @@ namespace SMTRPZ.Lab2
             new DemiguiseEncounterHandler()
         };
 
-        protected RndEncHandlersChain() : base(Handlers)
+        public RndEncHandlersChain() : base(Handlers)
         {
             Random = new Random();
         }

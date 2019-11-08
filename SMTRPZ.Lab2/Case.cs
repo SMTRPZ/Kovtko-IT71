@@ -6,21 +6,21 @@ namespace SMTRPZ.Lab2
 {
     public class Case
     {
-        private static readonly HabitationHandlersChain HabitationPicker = HabitationHandlersChain.Instance;
-        private static readonly RndEncHandlersChain RndEncounter = RndEncHandlersChain.Instance;
+        private readonly HabitationHandlersChain habitationPicker;
+        private readonly RndEncHandlersChain rndEncounter;
         private VoiceHandler voiceHandler;
         private IHabitationUnit storageRoot;
+
         public Case(HabitationsGroup unit)
         {
             storageRoot = unit;
             voiceHandler = new DayTimeHandler(storageRoot);
+            habitationPicker = new HabitationHandlersChain();
+            rndEncounter = new RndEncHandlersChain();
         }
 
-        public Case()
-        {
-            storageRoot = new HabitationsGroup();
-            voiceHandler = new DayTimeHandler(storageRoot);
-        }
+        public Case() : this(new HabitationsGroup())
+        { }
 
         public void SetTimeToNight()
         {
@@ -63,12 +63,12 @@ namespace SMTRPZ.Lab2
 
         public void AddAnimal(Animal a)
         {
-            storageRoot.AddContainer(HabitationPicker.PickHabitation(a));
+            storageRoot.AddContainer(habitationPicker.PickHabitation(a));
         }
 
         public void RandomEncounter()
         {
-            AddAnimal(RndEncounter.HandleEncounterRandom10());
+            AddAnimal(rndEncounter.HandleEncounterRandom10());
         }
 
         public Habitation GetAnimalContainer(string animalName)

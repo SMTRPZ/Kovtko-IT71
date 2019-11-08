@@ -1,21 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="SMTRPZ.Lab2.Singleton&lt;TSingleton&gt;">
+  <Class Name="SMTRPZ.Lab2.HandlersChain&lt;THandler&gt;">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\Singleton.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SMTRPZ.Lab2.HandlersChain&lt;TSingleton, THandler&gt;">
-    <Position X="2.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\HandlersChain.cs</FileName>
+      <FileName>HandlersChains\HandlersChains\HandlersChain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SMTRPZ.Lab2.RndEncHandlersChain">
-    <Position X="3.25" Y="6" Width="1.5" />
+    <Position X="3.25" Y="3.25" Width="1.5" />
     <AssociationLine Name="Handlers" Type="SMTRPZ.Lab2.RandomEncounterHandler">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-0.859" Y="0.081" />
@@ -23,31 +16,31 @@
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAEAABAAIAAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\RndEncHandlersChain.cs</FileName>
+      <FileName>HandlersChains\HandlersChains\RndEncHandlersChain.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="Handlers" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="SMTRPZ.Lab2.HabitationHandlersChain">
-    <Position X="1" Y="6" Width="1.5" />
+    <Position X="1" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>HandlersChains\HabitationHandlersChain.cs</FileName>
+      <FileName>HandlersChains\HandlersChains\HabitationHandlersChain.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="Handlers" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="SMTRPZ.Lab2.HabitationHandler" Collapsed="true">
-    <Position X="0.5" Y="4.75" Width="1.5" />
+    <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>HabitationHandlers\HabitaionHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SMTRPZ.Lab2.RandomEncounterHandler" Collapsed="true">
-    <Position X="4" Y="4.75" Width="1.5" />
+    <Position X="4" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>RandomEncounterHandlers\RandomEncounterHandler.cs</FileName>

@@ -31,7 +31,7 @@ namespace SMTRPZ.Lab2
             Console.WriteLine(mainCase.GetTotalFoodWeight());
 
             HabitationsGroup habitationsGroup = new HabitationsGroup();
-            habitationsGroup.AddContainer(HabitationHandlersChain.Instance.PickHabitation(new Demiguise("Old Snorlax", 59)));
+            habitationsGroup.AddContainer(new HabitationHandlersChain().PickHabitation(new Demiguise("Old Snorlax", 59)));
             mainCase.AddContainer(habitationsGroup);
 
             Console.WriteLine(mainCase.GetAllVoices());
